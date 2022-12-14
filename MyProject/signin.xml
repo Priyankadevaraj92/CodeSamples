@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="search"/>
+</run></groups>
+<parameter name="emailorNo" value="8609895686"/>
+<parameter name="password" value="Passw0rd"/>
+  <test thread-count="5" name="sp">
+    <classes>
+      <class name="org.amazon.test.Tc01Amazon"/>
+    </classes>
+  </test> <!-- sp -->
+</suite> <!-- Suite -->
